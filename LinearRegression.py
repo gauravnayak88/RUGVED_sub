@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import sklearn
 from sklearn.model_selection import train_test_split
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 class LinearRegression():
     def _init_(self, learning_rate, iterations):
@@ -74,12 +74,12 @@ def main():
     print("Trained bias (b):  ", model.b)
     # print(sklearn.metrics.r2_score(X_test, Y_pred))
     # Visualization on test set
-    plt.scatter(X_test, Y_test, color='blue')
-    plt.plot(X_test, Y_pred, color='orange')
-    plt.title('Test data')
-    plt.xlabel('Lotsize')
-    plt.ylabel('Price')
-    plt.show()
+    # plt.scatter(X_test, Y_test, color='blue')
+    # plt.plot(X_test, Y_pred, color='orange')
+    # plt.title('Test data')
+    # plt.xlabel('Lotsize')
+    # plt.ylabel('Price')
+    # plt.show()
 
 if _name_ == "_main_":
     main()
